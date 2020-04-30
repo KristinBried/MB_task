@@ -13,6 +13,7 @@
     <script src="script/bootstrap.min.js"></script>
     <script src="script/script.js"></script>
 </head>
+
 <body>
 
 <div class="background-container">
@@ -38,17 +39,17 @@
     <div class="line4 line-format"></div>
     <!-- <form method="post" action="/sorry-page.html"-->
         <label for="name" class="sign-up-name">Name<span class="must-fill">*</span></label>
-        <br><input class="sign-up-input" type="text" id="name" name="name"> 
-    <img class="sign-name-img name-img sign-up-icon" src="images/name.png" alt="Name icon">
+        <br><input class="sign-up-input" type="text" id="name" name="name" onfocus='changeImage5("images/name-active.png");' onfocusout='changeImage5("images/name.png")'>> 
+    <img class="sign-name-img name-img sign-up-icon" src="images/name.png" alt="Name icon" id="name-icon">
 
         <label for="email" class="sign-up-email">E-mail<span class="must-fill">*</span></label>
-        <br><input type="text" class="input-signup-email" name="email">
+        <br><input type="text" class="input-signup-email" name="email" onfocus='changeImage3("images/mail-active.png");' onfocusout='changeImage3("images/mail1.png")'>
         <div class="formline line-form-2"></div>
-    <img class="email-img sign-up-icon email-img-signup" src="images/mail1.png" alt="Mail icon">
+    <img class="email-img sign-up-icon email-img-signup" id="mail-icon2" src="images/mail1.png" alt="Mail icon">
 
         <label for="password" class="sign-up-passw">Password<span class="must-fill">*</span></label>
-        <br><input type="password" class="password input-passw-signup" name="password_1">
-    <img class="signup-pass-img sign-up-icon" src="images/pass.png" alt="Password icon">
+        <br><input type="password" class="password input-passw-signup" name="password_1" onfocus='changeImage4("images/pass-active.png");' onfocusout='changeImage4("images/pass.png")'>
+    <img class="signup-pass-img sign-up-icon" src="images/pass.png" alt="Password icon" id="pass-icon2">
 
     <div class="error"></div>
     <button onclick="redirectPage()" class="orange-btn sign-up-button_sc" type="submit" name="reg_user">SIGN UP</button>
@@ -62,12 +63,12 @@
 
     <!--<form method="post" action="/sorry-page.html"-->
         <label for="email" class="login-email">E-mail<span class="must-fill">*</span></label>
-        <br><input type="text" class="email login-email-input" name="email">
-    <img class="login-email-img sign-up-icon" src="images/mail1.png" alt="Mail icon">
+        <br><input type="text" class="email login-email-input" name="email" onfocus='changeImage("images/mail-active.png");' onfocusout='changeImage("images/mail1.png")'>
+    <img class="login-email-img sign-up-icon" id="mail-icon" src="images/mail1.png" alt="Mail icon">
 
         <label for="password" class="login-password">Password<span class="must-fill">*</span></label>
-        <br><input type="password" class="password login-password-input" name="password">
-    <img class="pass-img sign-up-icon login-pass-img" src="images/pass.png" alt="Password icon">
+        <br><input type="password" class="password login-password-input" name="password" onfocus='changeImage2("images/pass-active.png");' onfocusout='changeImage2("images/pass.png")'>
+    <img class="pass-img sign-up-icon login-pass-img" id="pass-icon" src="images/pass.png" alt="Password icon">
 
     <div class="error-login"></div>
     <button onclick="redirectPage()" class="orange-btn login-button" type="submit" name="login_user">LOGIN</button>
