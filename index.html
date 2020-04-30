@@ -33,55 +33,51 @@
 </div>
 
 <div class="sliding-container">
-    <h class="sign-up background-heading">Sign Up</h>
+    <h class="sign-up-title background-heading">Sign Up</h>
     <img class="logo" src="images/logo.png">
-    <div class="line3 line-format"></div>
-    <div class="name-form sign-up-form">
+    <div class="line4 line-format"></div>
     <!-- <form method="post" action="/sorry-page.html"-->
-        <label for="name">Name<span class="must-fill">*</span></label>
-        <br><input type="text" id="name" name="name"> 
+        <label for="name" class="sign-up-name">Name<span class="must-fill">*</span></label>
+        <br><input class="sign-up-input" type="text" id="name" name="name"> 
         <div class="formline line-form-1"></div>
-    </div>
-    <img class="name-img sign-up-icon" src="images/name.png" alt="Name icon">
-    <div class="email-form sign-up-form">
-        <label for="email">E-mail<span class="must-fill">*</span></label>
-        <br><input type="text" class="email" name="email">
+    <img class="sign-name-img name-img sign-up-icon" src="images/name.png" alt="Name icon">
+
+        <label for="email" class="sign-up-email">E-mail<span class="must-fill">*</span></label>
+        <br><input type="text" class="input-signup-email" name="email">
         <div class="formline line-form-2"></div>
-    </div>
-    <img class="email-img sign-up-icon" src="images/mail1.png" alt="Mail icon">
-    <div class="password-form sign-up-form">
-        <label for="password">Password<span class="must-fill">*</span></label>
-        <br><input type="password" class="password" name="password_1">
+    <img class="email-img sign-up-icon email-img-signup" src="images/mail1.png" alt="Mail icon">
+
+        <label for="password" class="sign-up-passw">Password<span class="must-fill">*</span></label>
+        <br><input type="password" class="password input-passw-signup" name="password_1">
         <div class="formline line-form-3"></div>
-    </div>
-    <img class="pass-img sign-up-icon" src="images/pass.png" alt="Password icon">
+    <img class="signup-pass-img sign-up-icon" src="images/pass.png" alt="Password icon">
+
     <div class="error"></div>
-    <button onclick="redirectPage()" class="orange-sign-up-button" type="submit" name="reg_user">SIGN UP</button>
+    <button onclick="redirectPage()" class="orange-btn sign-up-button_sc" type="submit" name="reg_user">SIGN UP</button>
 </form>
 </div>
 
 
 
 <div class="sliding-container-2">
-    <h class="sign-up background-heading">Login</h>
-    <img class="logo" src="images/logo.png">
+    <h class="login-heading background-heading">Login</h>
+    <img class="login-logo" src="images/logo.png">
     <div class="line3 line-format"></div>
-    <div class="email-form sign-up-form">
+
     <!--<form method="post" action="/sorry-page.html"-->
-        <label for="email">E-mail<span class="must-fill">*</span></label>
-        <br><input type="text" class="email" name="email">
-        <div class="formline line-form-2"></div>
-    </div>
-    <img class="email-img sign-up-icon" src="images/mail1.png" alt="Mail icon">
-    <div class="password-form sign-up-form">
-        <label for="password">Password<span class="must-fill">*</span></label>
-        <br><input type="password" class="password" name="password">
-        <div class="formline line-form-3"></div>
-    </div>
-    <img class="pass-img sign-up-icon" src="images/pass.png" alt="Password icon">
+        <label for="email" class="login-email">E-mail<span class="must-fill">*</span></label>
+        <br><input type="text" class="email login-email-input" name="email">
+        <div class="formline login-line-form-2"></div>
+    <img class="login-email-img sign-up-icon" src="images/mail1.png" alt="Mail icon">
+
+        <label for="password" class="login-password">Password<span class="must-fill">*</span></label>
+        <br><input type="password" class="password login-password-input" name="password">
+        <div class="formline login-line-form-3"></div>
+    <img class="pass-img sign-up-icon login-pass-img" src="images/pass.png" alt="Password icon">
+
     <div class="error-login"></div>
-    <button onclick="redirectPage()" class="orange-sign-up-button" type="submit" name="login_user">LOGIN</button>
-    </form>
+    <button onclick="redirectPage()" class="orange-btn login-button" type="submit" name="login_user">LOGIN</button>
+    <!--</form>-->
     <a class="forgot-pass" href="#">Forgot?</a>
 </div>
 
