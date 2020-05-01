@@ -24,7 +24,7 @@
       })
 
       function redirectPage() {
-        window.location.href = "sorry-page.html";
+        window.location.href = "page/sorry-page.html";
       }
 
       function changeImage(a) {
