@@ -32,6 +32,7 @@ body {
 .background-heading {
     font-size: 1.75vw;
     font-weight: lighter;
+    align-self: center;
 }
 
 .background-paragraph {
@@ -61,7 +62,8 @@ body {
 
 .line-format {
     color: #49abfe;
-    border-top: 1.5px solid;
+    border-top: 2px solid;
+    align-self: center;
 }
 
 /* DONT HAVE ACCOUNT PART*/ 
@@ -355,6 +357,7 @@ input {
     border-bottom: solid 1px gray;
     outline: none;
     align-self: end;
+    font-size: 1vw;
 }
 
 .orange-btn {
@@ -389,3 +392,22 @@ input {
     align-self: center;
 }
 
+/*FOR SCREENS SMALLER THAN 950px*/
+
+@media only screen and (max-height: 750px) {
+    .background-heading {
+        font-size: 1.5vw;
+    }
+    
+    .background-paragraph {
+        font-size: 1vw;
+    }
+
+    .label {
+        font-size: 0.4vw;
+    }
+
+    footer {
+        font-size: 0.7vw;
+    }
+  }
