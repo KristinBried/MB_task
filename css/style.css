@@ -350,6 +350,16 @@ label {
     color: red;
 }
 
+a:visited {
+    color: inherit;
+    text-decoration-color: transparent;
+    outline: none;
+  }
+  
+  a {
+    text-decoration-color: transparent;
+    outline: none;
+  }
 input {
     border-top: transparent;
     border-left: transparent;
